@@ -1,10 +1,17 @@
+// Create AngularJS module and inject Firebase
 angular.module('scheduleApp',['firebase'])
-.controller('mainController', function($scope, $firebaseObject){
-  var ref = new Firebase("https://scheduling-application-434.firebaseio.com/days");
-  var syncObject = $firebaseObject(ref);
 
+// Create main controller and get access to Firebase
+.controller('mainController', function($scope, $firebaseObject){
+
+   // Connect to Firebase
+  var ref = new Firebase("https://scheduling-application-434.firebaseio.com/days");
+  //Sync as an object
+  var syncObject = $firebaseObject(ref);
+  // // Three-way data binding
   syncObject.$bindTo($scope, 'days');
 
+  // Function to set default data
   $scope.reset = function(){
 
     ref.set({

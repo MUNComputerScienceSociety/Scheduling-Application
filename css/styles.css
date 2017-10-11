@@ -186,11 +186,13 @@ nav a.selected, nav a:hover {
   animation: flashAvailable 0.5s ease;
 }
 
+/* Animation for time slot to flash red  when booked */
 @keyFrames flashBooked{
   0%, 100% {background:#f2dede; transform:scale(1);}
   50%      {background: #F99090; transform:scale(1.5);}
 }
 
+/* Animation for time slot to flash green when available */
 @keyFrames flashAvailable{
   0%, 100% {background:#6AB074; transform:scale(1);}
   50%      {background: rgb(119, 218, 78); transform:scale(1.5);}
