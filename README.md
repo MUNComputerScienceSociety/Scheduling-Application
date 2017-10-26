@@ -10,3 +10,5 @@ https://firebase.google.com/docs/
 
 AngularJS Tutorial: 
 https://www.w3schools.com/angular/
+
+Thank you for coming!
