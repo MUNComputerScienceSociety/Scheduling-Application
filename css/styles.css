@@ -211,3 +211,29 @@ nav a.selected, nav a:hover {
   width: 80%;
 
 }
+
+/***********************
+      Booking Page
+************************/
+#mainDiv{
+  width =80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.textbox{
+  width: 20%;
+  margin: 5px 30% 5px 30%;
+}
+
+.button{
+  width: 20%;
+  margin: 10px 30% 5px 30%;
+}
+
+.bookingBtn{
+  margin: 5px 5px;
+  padding: 25px 20px;
+  color: white;
+  background-color: green;
+}
