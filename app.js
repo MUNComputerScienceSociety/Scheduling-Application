@@ -1,8 +1,14 @@
+function myFunction(){
+  url = "bookingPage.html";
+  window.open(url, "_self");
+}
 // Create AngularJS module and inject Firebase
 angular.module('scheduleApp',['firebase'])
 
 // Create main controller and get access to Firebase
 .controller('mainController', function($scope, $firebaseObject){
+
+
 
    // Connect to Firebase
   var ref = new Firebase("https://scheduling-application-434.firebaseio.com/days");
